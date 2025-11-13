@@ -1,6 +1,6 @@
 {
   "name": "Devops",
-  "packageManager": "yarn@4.10.3",
+  "packageManager": "yarn@1.22.22",
   "dependencies": {
     "express": "^5.1.0"
   },
