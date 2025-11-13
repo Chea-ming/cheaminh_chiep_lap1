@@ -23,7 +23,7 @@ jobs:
           cache: 'yarn'
           
       - name: Install Yarn
-        run: npm install -g yarn@4.10.3
+        run: npm install -g yarn@1.22.22
         
       - name: Install dependencies
         run: yarn install --frozen-lockfile
