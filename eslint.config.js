@@ -1,6 +1,4 @@
-import js from '@eslint/js';
-
-export default [
+module.exports = [
   {
     files: ['**/*.js'],
     languageOptions: {
@@ -8,14 +6,14 @@ export default [
       sourceType: 'module',
     },
     rules: {
-      ...js.configs.recommended.rules,
       'no-unused-vars': 'warn',
-      'no-console': 'warn',
-      'prefer-const': 'error',
-      'no-var': 'error',
+      'no-console': 'off',
+      'indent': ['error', 2],
+      'quotes': ['error', 'single'],
+      'semi': ['error', 'always']
     },
   },
   {
-    ignores: ['node_modules/', 'dist/', 'build/'],
-  },
+    ignores: ['node_modules/', 'dist/', 'build/', 'coverage/']
+  }
 ];
